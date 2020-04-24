@@ -21,15 +21,17 @@ if (isNaN(giocata_utente)== true || giocata_utente > 5 || giocata_utente < 1) {
 // stampo il valore di giocata_utente
 // console.log(giocata_utente);
 // stampo il valore di giocata_utente usando la funzione stampa
-stampa('il numero inserito dall utente e: ' + giocata_utente);
+stampa('l\'utente ha inserito il numero: ' + giocata_utente);
 // genero un numero random da 1 a 5
 var giocata_pc = Math.floor(Math.random() * 5) + 1;
 // stampo il valore di giocata_pc
 // console.log(giocata_pc);
 // stampo il valore di giocata_pc usando la funzione stampa
-stampa('il numero per il pc e: ' + giocata_pc);
+stampa('il pc ha scelto casualmente il numero : ' + giocata_pc);
 // chiedo all utente di scegliere da pari e dispari
 var pari_o_dispari = prompt('Scegli tra pari e dispari (scrivi pari se scegli pari e dispari se scegli dispari): ');
+// stampo la scelta dell utente
+stampa('l\'utente ha scelto: ' + pari_o_dispari);
 // valuto che il dato inserito dall utente sia corretto altrimenti richiedo l inserimento
 if (pari_o_dispari  != 'pari' && pari_o_dispari  != 'dispari') {
     location.reload();
@@ -39,7 +41,7 @@ var somma = giocata_utente + giocata_pc;
 // stampa la somma
 // console.log(somma);
 // stampa la somma usando la funzione stampa
-stampa('il valore della somma e: ' + somma);
+stampa('la somma ha il valore di: ' + 'numero utente + numero pc uguale a: ' + somma);
 // verifico che la somma sia pari o dispari richiamando la funzione pari e visualizzo l output con la funzione stampa
 if (pari(somma)== true) {
     somma_pari = 'la somma è pari';
@@ -51,12 +53,15 @@ if (pari(somma)== true) {
     somma_dispari = 'dispari';
 }
 // comunico all utente se ha vinto o perso in base al fatto se abbia indovinato se la somma sia pari o dispari
+// for (var i = 0; i < 2; i++) {
+//
+// }
 // if (pari_o_dispari == somma_pari ) {
 //     stampa('Utente vince');
 // } else {
 //     stampa('Utente perde');
 // }
-//
+
 // if (pari_o_dispari == somma_dispari ) {
 //     stampa('Utente vince');
 // } else {
