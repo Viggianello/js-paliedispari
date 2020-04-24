@@ -47,23 +47,20 @@ if (pari(somma)== true) {
     somma_pari = 'la somma è pari';
     stampa(somma_pari);
     somma_pari = 'pari';
+    // comunico all utente se ha vinto o perso in base al fatto se abbia indovinato se la somma sia pari o dispari
+    if (pari_o_dispari == somma_pari ) {
+        stampa('Utente vince');
+    } else {
+        stampa('Utente perde');
+    }
 } else {
     somma_dispari = 'la somma è dispari';
     stampa(somma_dispari);
     somma_dispari = 'dispari';
+    // comunico all utente se ha vinto o perso in base al fatto se abbia indovinato se la somma sia pari o dispari
+    if (pari_o_dispari == somma_dispari ) {
+        stampa('Utente vince');
+    } else {
+        stampa('Utente perde');
+    }
 }
-// comunico all utente se ha vinto o perso in base al fatto se abbia indovinato se la somma sia pari o dispari
-// for (var i = 0; i < 2; i++) {
-//
-// }
-// if (pari_o_dispari == somma_pari ) {
-//     stampa('Utente vince');
-// } else {
-//     stampa('Utente perde');
-// }
-
-// if (pari_o_dispari == somma_dispari ) {
-//     stampa('Utente vince');
-// } else {
-//     stampa('Utente perde');
-// }
