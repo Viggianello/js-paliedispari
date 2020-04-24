@@ -15,8 +15,8 @@ function stampa(cosa_voglio_stampare) {
 // chiedo all utente un numero da 1 a 5
 var giocata_utente = parseInt(prompt('Scrivi un numero da 1 a 5: '));
 // valuto che il dato inserito dall utente sia corretto altrimenti richiedo l inserimento
-if (giocata_utente > 6 && isNaN(giocata_utente) == false) {
-    location.reload()
+if (isNaN(giocata_utente)== true || giocata_utente > 5 || giocata_utente < 1) {
+    location.reload();
 }
 // stampo il valore di giocata_utente
 // console.log(giocata_utente);
@@ -32,7 +32,7 @@ stampa('il numero per il pc e: ' + giocata_pc);
 var pari_o_dispari = prompt('Scegli tra pari e dispari (scrivi pari se scegli pari e dispari se scegli dispari): ');
 // valuto che il dato inserito dall utente sia corretto altrimenti richiedo l inserimento
 if (pari_o_dispari  != 'pari' && pari_o_dispari  != 'dispari') {
-    location.reload()
+    location.reload();
  }
 // faccio la somma dei due numeri (giocata utente + giocata pc)
 var somma = giocata_utente + giocata_pc;
