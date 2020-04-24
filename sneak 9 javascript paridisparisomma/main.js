@@ -19,27 +19,27 @@ if (giocata_utente > 6 && isNaN(giocata_utente) == false) {
     location.reload()
 }
 // stampo il valore di giocata_utente
-console.log(giocata_utente);
+// console.log(giocata_utente);
 // stampo il valore di giocata_utente usando la funzione stampa
-stampa(giocata_utente);
+stampa('il numero inserito dall utente e: ' + giocata_utente);
 // genero un numero random da 1 a 5
 var giocata_pc = Math.floor(Math.random() * 5) + 1;
 // stampo il valore di giocata_pc
-console.log(giocata_pc);
+// console.log(giocata_pc);
 // stampo il valore di giocata_pc usando la funzione stampa
-stampa(giocata_pc);
+stampa('il numero per il pc e: ' + giocata_pc);
 // chiedo all utente di scegliere da pari e dispari
 var pari_o_dispari = prompt('Scegli tra pari e dispari (scrivi pari se scegli pari e dispari se scegli dispari): ');
 // valuto che il dato inserito dall utente sia corretto altrimenti richiedo l inserimento
-if (pari_o_dispari  != 'pari' || pari_o_dispari  != 'dispari') {
+if (pari_o_dispari  != 'pari' && pari_o_dispari  != 'dispari') {
     location.reload()
  }
 // faccio la somma dei due numeri (giocata utente + giocata pc)
 var somma = giocata_utente + giocata_pc;
 // stampa la somma
-console.log(somma);
+// console.log(somma);
 // stampa la somma usando la funzione stampa
-stampa(somma);
+stampa('il valore della somma e: ' + somma);
 // verifico che la somma sia pari o dispari richiamando la funzione pari e visualizzo l output con la funzione stampa
 if (pari(somma)== true) {
     somma_pari = 'la somma è pari';
@@ -51,14 +51,14 @@ if (pari(somma)== true) {
     somma_dispari = 'dispari';
 }
 // comunico all utente se ha vinto o perso in base al fatto se abbia indovinato se la somma sia pari o dispari
-if (pari_o_dispari == somma_pari ) {
-    stampa('Utente vince');
-} else {
-    stampa('Utente perde');
-}
-
-if (pari_o_dispari == somma_dispari ) {
-    stampa('Utente vince');
-} else {
-    stampa('Utente perde');
-}
+// if (pari_o_dispari == somma_pari ) {
+//     stampa('Utente vince');
+// } else {
+//     stampa('Utente perde');
+// }
+//
+// if (pari_o_dispari == somma_dispari ) {
+//     stampa('Utente vince');
+// } else {
+//     stampa('Utente perde');
+// }
